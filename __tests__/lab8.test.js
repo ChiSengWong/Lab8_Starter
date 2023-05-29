@@ -70,14 +70,11 @@ describe('Basic user flow for Website', () => {
     const prodItems = await page.$$('product-item');
 
     for (let i = 1; i < prodItems.length; i++) {
-      console.log('line 73, i = ', i);
       // Get the shadowRoot and query select the button inside
       const shadowRoot = await prodItems[i].getProperty('shadowRoot');
       const button = await shadowRoot.$('button');
       // Click on the button
-      await button.click().then(() => {
-        page.$eval('#cart-count', (element) => element.innerText).then(text => console.log(text))
-      });
+      await button.click()
     }
 
     // Check if the innerText of #cart-count is 20
