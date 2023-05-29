@@ -10,3 +10,11 @@
 
 4. Would you use a unit test to test the “max message length” feature of a messaging application? Why or why not? For this question, assume the “max message length” feature prevents the user from typing more than 80 characters.
 > Yes, we can test it using individual test case to validate that the code correctly enforces the maximum character limit.
+
+### Screenshot for testing
+npm test
+![npm test](npm_test_result.png)
+sum test
+![sum test](sum.test_result.png)
+unit test
+![unit test](unit.test_result.png)
