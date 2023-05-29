@@ -1,4 +1,6 @@
 # Lab 8 - Starter
+Chi Wong
+
 1. Where would you fit your automated tests in your Recipe project development pipeline? Select one of the following and explain why.
 > Running tests on GitHub Actions when code is pushed provides benefits like automated testing, continuous integration leading to improved code quality and streamlined development.
 
